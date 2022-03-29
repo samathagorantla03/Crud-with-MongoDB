@@ -1,0 +1,27 @@
+html 
+    body
+        a(href="http://localhost:3400/add")
+            button add 
+        table(border=2)
+            thead 
+                th Name
+                th DOB 
+                th Loves  
+                th Weight
+                th Gender 
+                th Vampires
+                th Operations
+            tbody 
+                each unicorn,index in unicorns 
+                    tr 
+                        td= unicorn.name 
+                        td= unicorn.dob
+                        td= unicorn.loves 
+                        td= unicorn.weight
+                        td= unicorn.gender 
+                        td= unicorn.vampires
+                        td
+                            a(href="http://localhost:3400/delete/"+unicorn._id)
+                                button del
+                            a(href="http://localhost:3400/edit/"+index)
+                                button Edit

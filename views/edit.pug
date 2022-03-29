@@ -1,0 +1,17 @@
+html        
+    head        
+    body    
+        form(action="/update/"+index method="post" name="u")
+            p Name: 
+                input(type="text" placeholder="enter unicorn name" value=unicorns[index].name name="name")
+            p DOB:
+                input(type="date" placeholder="enter DOB" value=unicorns[index].dob name="dob")
+            p Loves:
+                input(type="text" placeholder="enter loves" value=unicorns[index].loves.toString() name="loves")
+            p Weight:
+                input(type="text" placeholder="enter weight" value=unicorns[index].weight name="weight")
+            p Gender:
+                input(type="text" placeholder="enter gender" value=unicorns[index].gender name="gender")
+            p Vampires:
+                input(type="text" placeholder="enter vampires" value=unicorns[index].vampires name="vampires")
+            button  Update
